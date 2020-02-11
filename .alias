@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+alias testalias="echo 'doin a test'"
