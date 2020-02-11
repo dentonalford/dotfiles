@@ -1,2 +1,3 @@
-#!/usr/bin/env bash
-source ./.alias
+#!/bin/bash
+echo "running install.sh"
+alias testalias="echo 'testtesttest'"
