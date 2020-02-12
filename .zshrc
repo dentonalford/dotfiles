@@ -1,4 +1,8 @@
 #!/bin/zsh
+export DOTFILE_HOME="$HOME/dotfiles"
+export CABOCHON_HOME="$HOME/cabochon"
+export MONOLITH_HOME="$CABOCHON_HOME/packages/monolith"
+export UNIVERSE_HOME="$CABOCHON_HOME/packages/universe"
 
 source "$DOTFILE_HOME/scripts/alias.sh"
 source "$DOTFILE_HOME/scripts/scripts.sh"
