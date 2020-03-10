@@ -48,3 +48,12 @@ yarn-reset-current() {
   echo "Installing Yarn dependencies"
   yarn
 }
+
+cmd-universe() {
+  yarn docker:exec opal_universe-shell "$1"
+}
+alias cmd:universe="cmd-universe"
+
+get-container-pid() {
+  docker service ps -f "desired-state=running" -q "$1" | cut -d: -f1
+}
