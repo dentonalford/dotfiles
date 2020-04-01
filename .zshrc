@@ -27,3 +27,10 @@ zstyle ':vcs_info:git:*' formats '%b'
 # Set up the prompt (with git branch name)
 setopt PROMPT_SUBST
 PROMPT="${MAGENTA}[EMBEDITOR] \${vcs_info_msg_0_} $GREEN%1d$REMOVE: "
+
+
+
+# ASDF
+. $HOME/.asdf/asdf.sh
+fpath=(${ASDF_DIR}/completions $fpath)
+autoload -Uz compinit && compinit
