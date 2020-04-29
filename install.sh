@@ -1,3 +1,7 @@
 #!/bin/zsh
-cp ~/dotfiles/.zshrc ~/.zshrc
-source ~/.zshrc
+
+DOTFILES_ZSHRC="./.zshrc"
+TARGET_ZSHRC="$HOME/.zshrc"
+
+cat DOTFILES_ZSHRC >> TARGET_ZSHRC
+source TARGET_ZSHRC
