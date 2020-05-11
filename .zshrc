@@ -1,12 +1,6 @@
 #!/bin/zsh
-export DOTFILE_HOME="$HOME/dotfiles"
-export CABOCHON_HOME="$HOME/cabochon"
-export MONOLITH_HOME="$CABOCHON_HOME/packages/monolith"
-export UNIVERSE_HOME="$CABOCHON_HOME/packages/universe"
 
-source "$DOTFILE_HOME/scripts/alias.sh"
-source "$DOTFILE_HOME/scripts/scripts.sh"
-
+# setup color vars
 BLACK='%F{black}'
 BLUE='%F{blue}'
 CYAN='%F{cyan}'
@@ -27,10 +21,3 @@ zstyle ':vcs_info:git:*' formats '%b'
 # Set up the prompt (with git branch name)
 setopt PROMPT_SUBST
 PROMPT="${MAGENTA}[EMBEDITOR] \${vcs_info_msg_0_} $GREEN%1d$REMOVE: "
-
-
-
-# ASDF
-. $HOME/.asdf/asdf.sh
-fpath=(${ASDF_DIR}/completions $fpath)
-autoload -Uz compinit && compinit
