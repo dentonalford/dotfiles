@@ -1,4 +1,5 @@
-#!/bin/zsh
+
+### Contents below copied from dotfiles .zshrc
 
 # setup color vars
 BLACK='%F{black}'
@@ -21,3 +22,5 @@ zstyle ':vcs_info:git:*' formats '%b'
 # Set up the prompt (with git branch name)
 setopt PROMPT_SUBST
 PROMPT="${MAGENTA}[EMBEDITOR] \${vcs_info_msg_0_} $GREEN%1d$REMOVE: "
+
+### Contents above copied from dotfiles .zshrc
