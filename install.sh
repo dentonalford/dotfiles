@@ -2,4 +2,4 @@
 
 TARGET_ZSHRC="$HOME/.zshrc"
 
-cat ./zshrc >> $TARGET_ZSHRC
+cat ./.zshrc >> $TARGET_ZSHRC
