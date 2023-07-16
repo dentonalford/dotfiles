@@ -5,8 +5,10 @@ echo "Configuration at: $CONFIG_DIR"
 
 # ZSHRC
 ZSH_CONFIG_FILE="$HOME/.zshrc"
+echo "Removing existing zsh config file at $ZSH_CONFIG_FILE"
+rm $ZSH_CONFIG_FILE
 echo "Copying nvim configuration to $ZSH_CONFIG_FILE"
-cp .zshrc >> $ZSH_CONFIG_FILE
+cp .zshrc $ZSH_CONFIG_FILE
 
 
 # NVIM

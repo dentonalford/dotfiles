@@ -21,6 +21,6 @@ zstyle ':vcs_info:git:*' formats '%b'
 
 # Set up the prompt (with git branch name)
 setopt PROMPT_SUBST
-PROMPT="${MAGENTA} \${vcs_info_msg_0_} $GREEN%1d$REMOVE: "
+PROMPT="${MAGENTA}\${vcs_info_msg_0_} $GREEN%1d$REMOVE: "
 
 ### Contents above copied from dotfiles .zshrc
