@@ -19,6 +19,38 @@ return require('packer').startup(function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
   })
 
+  use('jose-elias-alvarez/null-ls.nvim')
+  use('MunifTanjim/prettier.nvim')
+
+  vim.cmd([[ let g:neo_tree_remove_legacy_commands = 1 ]])
+
+  use({
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v2.x",
+    requires = {
+      "nvim-lua/plenary.nvim",
+      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+      "MunifTanjim/nui.nvim",
+    },
+    config = function ()
+      vim.cmd([[ let g:neo_tree_remove_legacy_commands = 1 ]])
+
+      require('neo-tree').setup({
+        close_if_last_window = true,
+        enable_git_status = true,
+        enable_diagnostics = true,
+        filesystem = {
+          follow_current_file = true,
+          group_empty_dirs = true,
+        },
+        buffers = {
+          follow_current_file = true,
+        }
+      })
+
+    end
+  })
+
   use({
     "folke/trouble.nvim",
     config = function()
