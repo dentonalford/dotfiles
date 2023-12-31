@@ -1,1 +1,3 @@
-require('dentonalford')
+require('config.keymaps')
+require('config.lazy')
+
