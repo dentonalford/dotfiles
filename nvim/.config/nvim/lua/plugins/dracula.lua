@@ -1,3 +1,6 @@
+---
+-- Set up dracula as the color scheme.
+---
 return {
   "Mofiqul/dracula.nvim",
   lazy = false,
