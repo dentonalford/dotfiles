@@ -1,6 +1,7 @@
 local ensure_installed = {
   "authzed",
   "bash",
+  "c",
   "css",
   "csv",
   "dockerfile",
