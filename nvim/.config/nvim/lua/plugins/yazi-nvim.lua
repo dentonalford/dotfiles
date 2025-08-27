@@ -37,6 +37,10 @@ return ---@type LazySpec
 		keymaps = {
 			show_help = "<f1>",
 		},
+		integrations = {
+			grep_in_directory = "fzf-lua",
+			grep_in_selected_files = "fzf-lua",
+		},
 	},
 	-- 👇 if you use `open_for_directories=true`, this is recommended
 	init = function()
@@ -45,4 +49,3 @@ return ---@type LazySpec
 		vim.g.loaded_netrwPlugin = 1
 	end,
 }
-

@@ -12,6 +12,7 @@ return {
 		-- or leave it empty to use the default settings
 		-- refer to the configuration section below
 		bigfile = { enabled = true },
+		bufdelete = { enabled = true },
 		dashboard = { enabled = true },
 		explorer = { enabled = false },
 		indent = { enabled = true },
@@ -23,5 +24,14 @@ return {
 		scroll = { enabled = true },
 		statuscolumn = { enabled = true },
 		words = { enabled = false },
+	},
+	keys = {
+		{
+			"<leader>bd",
+			function()
+				Snacks.bufdelete()
+			end,
+			desc = "Delete current buffer",
+		},
 	},
 }
