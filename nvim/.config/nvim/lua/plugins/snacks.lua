@@ -33,5 +33,12 @@ return {
 			end,
 			desc = "Delete current buffer",
 		},
+		{
+			"<leader>nh",
+			function()
+				Snacks.notifier.show_history()
+			end,
+			desc = "Show notification history",
+		},
 	},
 }
