@@ -20,4 +20,15 @@ return {
 			desc = "Search open buffers",
 		},
 	},
+	opts = {
+		file_ignore_patterns = {
+			"node_modules/",
+			"dist/",
+			".git/",
+			"build/",
+			"target/",
+			"package-lock.json",
+			"yarn.lock",
+		},
+	},
 }
