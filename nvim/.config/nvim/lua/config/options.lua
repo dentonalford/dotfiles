@@ -1,3 +1,6 @@
+vim.g.loaded_netrwPlugin = 1
+vim.g.loaded_netrw = 1
+
 ---
 -- Set default indent behavior
 ---
@@ -21,7 +24,7 @@ vim.opt.cursorline = true -- highlight current line
 vim.opt.undofile = true
 
 -- Paste from outside of neovim with `+p`
-vim.opt.clipboard:append({ 'unnamed', 'unnamedplus' })
+vim.opt.clipboard:append({ "unnamed", "unnamedplus" })
 
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = "a"

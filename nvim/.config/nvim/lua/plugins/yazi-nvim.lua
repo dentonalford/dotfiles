@@ -1,51 +1,52 @@
----
--- File explorer for the terminal and nvim. Shows up in an overlay.
----
-return ---@type LazySpec
-{
-	"mikavilpas/yazi.nvim",
-	event = "VeryLazy",
-	dependencies = {
-		-- check the installation instructions at
-		-- https://github.com/folke/snacks.nvim
-		"folke/snacks.nvim",
-	},
-	keys = {
-		-- 👇 in this section, choose your own keymappings!
-		{
-			"<leader>ee",
-			mode = { "n", "v" },
-			"<cmd>Yazi<cr>",
-			desc = "Open yazi at the current file",
-		},
-		{
-			-- Open in the current working directory
-			"<leader>ew",
-			"<cmd>Yazi cwd<cr>",
-			desc = "Open yazi in nvim's working directory",
-		},
-		{
-			"<leader>er",
-			"<cmd>Yazi toggle<cr>",
-			desc = "Resume the last yazi session",
-		},
-	},
-	---@type YaziConfig | {}
-	opts = {
-		-- if you want to open yazi instead of netrw, see below for more info
-		open_for_directories = false,
-		keymaps = {
-			show_help = "<f1>",
-		},
-		integrations = {
-			grep_in_directory = "fzf-lua",
-			grep_in_selected_files = "fzf-lua",
-		},
-	},
-	-- 👇 if you use `open_for_directories=true`, this is recommended
-	init = function()
-		-- More details: https://github.com/mikavilpas/yazi.nvim/issues/802
-		-- vim.g.loaded_netrw = 1
-		vim.g.loaded_netrwPlugin = 1
-	end,
-}
+return {}
+-- ---
+-- -- File explorer for the terminal and nvim. Shows up in an overlay.
+-- ---
+-- return ---@type LazySpec
+-- {
+-- 	"mikavilpas/yazi.nvim",
+-- 	event = "VeryLazy",
+-- 	dependencies = {
+-- 		-- check the installation instructions at
+-- 		-- https://github.com/folke/snacks.nvim
+-- 		"folke/snacks.nvim",
+-- 	},
+-- 	keys = {
+-- 		-- 👇 in this section, choose your own keymappings!
+-- 		{
+-- 			"<leader>ee",
+-- 			mode = { "n", "v" },
+-- 			"<cmd>Yazi<cr>",
+-- 			desc = "Open yazi at the current file",
+-- 		},
+-- 		{
+-- 			-- Open in the current working directory
+-- 			"<leader>ew",
+-- 			"<cmd>Yazi cwd<cr>",
+-- 			desc = "Open yazi in nvim's working directory",
+-- 		},
+-- 		{
+-- 			"<leader>er",
+-- 			"<cmd>Yazi toggle<cr>",
+-- 			desc = "Resume the last yazi session",
+-- 		},
+-- 	},
+-- 	---@type YaziConfig | {}
+-- 	opts = {
+-- 		-- if you want to open yazi instead of netrw, see below for more info
+-- 		open_for_directories = false,
+-- 		keymaps = {
+-- 			show_help = "<f1>",
+-- 		},
+-- 		integrations = {
+-- 			grep_in_directory = "fzf-lua",
+-- 			grep_in_selected_files = "fzf-lua",
+-- 		},
+-- 	},
+-- 	-- 👇 if you use `open_for_directories=true`, this is recommended
+-- 	init = function()
+-- 		-- More details: https://github.com/mikavilpas/yazi.nvim/issues/802
+-- 		-- vim.g.loaded_netrw = 1
+-- 		vim.g.loaded_netrwPlugin = 1
+-- 	end,
+-- }

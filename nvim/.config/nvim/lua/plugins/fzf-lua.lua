@@ -19,6 +19,13 @@ return {
 			end,
 			desc = "Search open buffers",
 		},
+		{
+			"<leader>fg",
+			function()
+				require("fzf-lua").live_grep()
+			end,
+			desc = "Live grep project files",
+		},
 	},
 	opts = {
 		file_ignore_patterns = {

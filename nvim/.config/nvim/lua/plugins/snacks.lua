@@ -17,6 +17,7 @@ return {
 		explorer = { enabled = false },
 		indent = { enabled = true },
 		input = { enabled = true },
+		lazygit = {},
 		picker = { enabled = false },
 		notifier = { enabled = true },
 		quickfile = { enabled = true },
@@ -39,6 +40,13 @@ return {
 				Snacks.notifier.show_history()
 			end,
 			desc = "Show notification history",
+		},
+		{
+			"<leader>gs",
+			function()
+				Snacks.lazygit.open()
+			end,
+			desc = "[g]it [s]tatus (snacks.lazygit)",
 		},
 	},
 }
