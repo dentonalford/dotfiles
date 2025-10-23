@@ -17,13 +17,14 @@ return {
 		explorer = { enabled = false },
 		indent = { enabled = true },
 		input = { enabled = true },
-		lazygit = {},
+		lazygit = { enabled = true },
 		picker = { enabled = false },
 		notifier = { enabled = true },
 		quickfile = { enabled = true },
 		scope = { enabled = true },
 		scroll = { enabled = true },
 		statuscolumn = { enabled = true },
+		terminal = { enabled = true, win = { position = "float" } },
 		words = { enabled = false },
 	},
 	keys = {
@@ -35,11 +36,25 @@ return {
 			desc = "Delete current buffer",
 		},
 		{
+			"<leader>tt",
+			function()
+				Snacks.terminal()
+			end,
+			desc = "[t]oggle floating [t]erminal",
+		},
+		{
+			"<C-\\>",
+			function()
+				Snacks.terminal(nil, { win = { position = "right" } })
+			end,
+			desc = "Open terminal in right split",
+		},
+		{
 			"<leader>nh",
 			function()
 				Snacks.notifier.show_history()
 			end,
-			desc = "Show notification history",
+			desc = "Show [n]otification [h]istory",
 		},
 		{
 			"<leader>gs",

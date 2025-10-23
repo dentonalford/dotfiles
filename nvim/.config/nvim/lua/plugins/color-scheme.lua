@@ -11,12 +11,25 @@
 -- 	end,
 -- }
 
+-- return {
+-- 	"folke/tokyonight.nvim",
+-- 	lazy = false,
+-- 	priority = 1000,
+-- 	config = function()
+-- 		vim.cmd([[colorscheme tokyonight]])
+-- 	end,
+-- }
+
 return {
-	"folke/tokyonight.nvim",
+	"sainnhe/sonokai",
 	lazy = false,
 	priority = 1000,
 	config = function()
-		vim.cmd([[colorscheme tokyonight]])
+		-- Optionally configure and load the colorscheme
+		-- directly inside the plugin declaration.
+		vim.g.sonokai_style = "maia"
+		vim.g.sonokai_enable_italic = true
+		vim.cmd.colorscheme("sonokai")
 	end,
 }
 

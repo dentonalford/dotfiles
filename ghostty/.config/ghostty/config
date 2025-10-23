@@ -1,5 +1,6 @@
 theme = Dracula
-font-family = GeistMono Nerd Font
+font-family = CaskaydiaCove Nerd Font
 working-directory = /Users/dentonalford/cabochon
 window-inherit-working-directory = false
 font-size = 16
+adjust-cell-height=30%
