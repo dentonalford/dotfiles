@@ -17,7 +17,16 @@ return {
 		explorer = { enabled = false },
 		indent = { enabled = true },
 		input = { enabled = true },
-		lazygit = { enabled = true },
+		lazygit = {
+			enabled = true,
+			config = {
+				git = {
+					pagers = {
+						pager = "delta --dark --paging=never --side-by-side",
+					},
+				},
+			},
+		},
 		picker = { enabled = false },
 		notifier = { enabled = true },
 		quickfile = { enabled = true },
