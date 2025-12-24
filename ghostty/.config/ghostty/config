@@ -2,5 +2,6 @@ theme = Dracula
 font-family = CaskaydiaCove Nerd Font
 working-directory = /Users/dentonalford/cabochon
 window-inherit-working-directory = false
-font-size = 16
+font-size = 13
 adjust-cell-height=30%
+initial-window = true

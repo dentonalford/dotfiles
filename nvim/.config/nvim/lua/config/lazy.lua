@@ -12,6 +12,9 @@ local set_up_options = function()
 	require("config.options")
 end
 
+local set_up_commands = function()
+	require("config.commands")
+end
 -- Now this is all boilerplate, save for where we call our own functions
 
 -- Bootstrap lazy.nvim
@@ -38,6 +41,7 @@ vim.g.mapleader = LEADER_KEY
 vim.g.maplocalleader = LOCAL_LEADER_KEY
 
 set_up_options()
+set_up_commands()
 
 -- Setup lazy.nvim
 require("lazy").setup({
@@ -53,4 +57,3 @@ require("lazy").setup({
 })
 
 set_up_keymaps()
-

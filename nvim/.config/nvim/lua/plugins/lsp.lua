@@ -208,6 +208,7 @@ return {
 			},
 			clangd = {},
 			elixirls = {},
+			eslint = {},
 			lua_ls = {
 				settings = {
 					Lua = {
@@ -218,6 +219,20 @@ return {
 				},
 			},
 			marksman = {},
+			solargraph = {
+				settings = {
+					solargraph = {
+						autoformat = true,
+						formatting = true,
+						completion = true,
+						diagnostic = true,
+						folding = true,
+						references = true,
+						rename = true,
+						symbols = true,
+					},
+				},
+			},
 			ts_ls = {},
 			yamlls = {},
 		}
@@ -239,6 +254,7 @@ return {
 		vim.list_extend(ensure_installed, {
 			"stylua", -- Used to format Lua code
 			"prettierd", -- Used to format javascript and typescript code
+			-- "eslint_d", replaced by eslint-lsp
 		})
 
 		require("mason-tool-installer").setup({ ensure_installed = ensure_installed })

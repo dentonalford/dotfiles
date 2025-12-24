@@ -37,5 +37,12 @@ return {
 			"package-lock.json",
 			"yarn.lock",
 		},
+		winopts = {
+			height = 0.95,
+			width = 0.95,
+			preview = {
+				horizontal = "right:50%",
+			},
+		},
 	},
 }

@@ -29,6 +29,7 @@ return {
 		-- directly inside the plugin declaration.
 		vim.g.sonokai_style = "maia"
 		vim.g.sonokai_enable_italic = true
+		vim.g.sonokai_dim_inactive_windows = 1
 		vim.cmd.colorscheme("sonokai")
 	end,
 }

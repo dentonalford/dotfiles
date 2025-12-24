@@ -1,3 +1,5 @@
+vim.opt.termguicolors = true
+
 vim.g.loaded_netrwPlugin = 1
 vim.g.loaded_netrw = 1
 
@@ -19,6 +21,7 @@ vim.opt.breakindent = true -- Enable break indent
 vim.opt.number = true -- always show numbers
 vim.opt.relativenumber = true -- use relative line numbers
 vim.opt.cursorline = true -- highlight current line
+vim.opt.linebreak = true
 
 -- Store undos between sessions
 vim.opt.undofile = true
