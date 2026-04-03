@@ -1,4 +1,6 @@
 return {
 	"actionshrimp/direnv.nvim",
-	opts = {},
+	opts = {
+		type = "dir",
+	},
 }

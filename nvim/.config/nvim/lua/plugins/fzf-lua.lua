@@ -28,6 +28,10 @@ return {
 		},
 	},
 	opts = {
+		keymap = {
+			-- Send all results to quickfix list
+			fzf = { true, ["ctrl-q"] = "select-all+accept" },
+		},
 		file_ignore_patterns = {
 			"node_modules/",
 			"dist/",
@@ -43,6 +47,9 @@ return {
 			preview = {
 				horizontal = "right:50%",
 			},
+		},
+		grep = {
+			hidden = true,
 		},
 	},
 }

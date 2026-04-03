@@ -9,3 +9,14 @@ vim.api.nvim_create_autocmd("FileType", {
 	group = augroup,
 	command = "compiler tsc | setlocal makeprg=npx\\ tsc\\ --noEmit",
 })
+
+vim.api.nvim_create_user_command("CopyRelativePath", function()
+	local path = vim.fn.expand("%:.")
+	vim.fn.setreg("+", path)
+end, { nargs = 0 })
+
+vim.api.nvim_create_user_command("UUID", function()
+	local uuid, _ = vim.fn.system("uuidgen"):gsub("\n", "")
+	uuid = uuid:lower()
+	vim.api.nvim_put({ uuid }, "c", false, true)
+end, { nargs = 0 })

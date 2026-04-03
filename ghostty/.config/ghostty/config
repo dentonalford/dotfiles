@@ -1,4 +1,4 @@
-theme = Dracula
+theme = Sonokai
 font-family = CaskaydiaCove Nerd Font
 working-directory = /Users/dentonalford/cabochon
 window-inherit-working-directory = false

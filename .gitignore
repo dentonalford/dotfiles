@@ -1,4 +1,6 @@
 
+.DS_STORE
+
 # tmux
 tmux/.config/tmux/plugins
 tmux-client*.log

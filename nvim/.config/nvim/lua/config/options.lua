@@ -23,6 +23,13 @@ vim.opt.relativenumber = true -- use relative line numbers
 vim.opt.cursorline = true -- highlight current line
 vim.opt.linebreak = true
 
+---
+-- Code folding w/ treesitter
+---
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+vim.opt.foldlevelstart = 99 -- no folds closed on buffer open
+
 -- Store undos between sessions
 vim.opt.undofile = true
 
