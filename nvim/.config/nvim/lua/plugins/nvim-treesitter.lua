@@ -16,6 +16,7 @@ local ensure_installed = {
 	"markdown",
 	"nginx",
 	"nix",
+  "norg",
 	"ruby",
 	"scss",
 	"sql",

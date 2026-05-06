@@ -22,7 +22,7 @@ return {
 		{
 			"<leader>fg",
 			function()
-				require("fzf-lua").live_grep()
+				require("fzf-lua").live_grep({ resume = true })
 			end,
 			desc = "Live grep project files",
 		},

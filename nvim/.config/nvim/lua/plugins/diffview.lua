@@ -2,7 +2,18 @@ return {
 	"sindrets/diffview.nvim",
 	opts = {},
 	keys = {
-		{ "<leader>gw", "<cmd>DiffviewOpen<cr>", desc = "Diff [g]it [w]orking directory" },
-		{ "<leader>gW", "<cmd>DiffviewClose<cr>", desc = "Close Diffview" },
+		{
+			"<leader>dp",
+			"<cmd>DiffviewOpen origin/HEAD...HEAD --imply-local<cr>",
+			desc = "[d]iff current [p]r against its base commit",
+		},
+		{
+			"<leader>dP",
+			"<cmd>DiffviewFileHistory --range=origin/HEAD...HEAD --right-only --no-merges<cr>",
+			desc = "[d]iff current [P]r by commit",
+		},
+		{ "<leader>do", "<cmd>DiffviewOpen<cr>", desc = "[d]iffview [o]pen" },
+		{ "<leader>dt", "<cmd>DiffviewToggle<cr>", desc = "[d]iffview [t]oggle" },
+		{ "<leader>dc", "<cmd>DiffviewClose<cr>", desc = "[d]iffview [c]lose" },
 	},
 }

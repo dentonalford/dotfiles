@@ -12,6 +12,9 @@ return {
 		-- Useful status updates for LSP.
 		{ "j-hui/fidget.nvim", opts = {} },
 	},
+	-- keys = {
+	-- 	{ "<leader>ef", "<cmd>LspEslintFixAll<CR>", desc = "LSP: [e]slint [f]ix all" },
+	-- },
 	config = function()
 		-- Brief aside: **What is LSP?**
 		--
@@ -207,7 +210,8 @@ return {
 				filetypes = { "bash", "sh" },
 			},
 			clangd = {},
-			elixirls = {},
+			-- elixirls = {},
+			expert = {},
 			eslint = {},
 			lua_ls = {
 				settings = {
